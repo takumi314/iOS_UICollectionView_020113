@@ -8,15 +8,16 @@
 
 #import "ViewController.h"
 #import "Cell.h"
+#import "HeaderClass.h"
+
 
 @interface ViewController ()
 
 @property (strong, nonatomic) NSArray *dataArray;
 @property (strong, nonatomic) NSArray *imageArray;
 
-
-
 @end
+
 
 @implementation ViewController
 
@@ -35,12 +36,24 @@
 
 
 - (NSInteger) numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return _dataArray.count;
+    return 5;
+//    return _dataArray.count;
+}
+
+- (UICollectionReusableView*) collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+
+    HeaderClass * header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"myHeader" forIndexPath:indexPath];
+    
+    header.myHeaderLabel.text = [NSString stringWithFormat:@"Section %ld", (long) indexPath.section + 1];
+    
+    return header;
+    
 }
 
 
+
 - (NSInteger) collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return _dataArray.count;
+    return _imageArray.count;
 }
 
 
@@ -51,9 +64,13 @@
     
     NSArray *images = self.imageArray[indexPath.section];
     
-//    aCell.myImage.image = [UIImage imageNamed:images[indexPath.row]];
+//    NSLog(@"%@", _imageArray[indexPath.row]);
     
-    NSLog(@"%@ - %@", self.dataArray[indexPath.section] , images);
+//    aCell.myImage.image = [UIImage imageNamed:images[indexPath.row]];
+  
+    aCell.myImage.image = [UIImage imageNamed:@"Udon.jpg"];
+    
+    //NSLog(@"%@ - %@", self.dataArray[indexPath.section] , images);
     
     return aCell;
     

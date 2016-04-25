@@ -33,6 +33,7 @@
 		8EE5E7BC1CCDF6650026EE7F /* Fish&Chips.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8EE5E7AB1CCDF6650026EE7F /* Fish&Chips.jpg */; };
 		8EE5E7BD1CCDF6650026EE7F /* BritishBreakfast.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8EE5E7AC1CCDF6650026EE7F /* BritishBreakfast.jpg */; };
 		8EE5E7BF1CCDF95E0026EE7F /* Udon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8EE5E7BE1CCDF95E0026EE7F /* Udon.jpg */; };
+		8EE5E7C21CCE01D00026EE7F /* HeaderClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE5E7C11CCE01D00026EE7F /* HeaderClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,8 @@
 		8EE5E7AB1CCDF6650026EE7F /* Fish&Chips.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Fish&Chips.jpg"; sourceTree = "<group>"; };
 		8EE5E7AC1CCDF6650026EE7F /* BritishBreakfast.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BritishBreakfast.jpg; sourceTree = "<group>"; };
 		8EE5E7BE1CCDF95E0026EE7F /* Udon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Udon.jpg; sourceTree = "<group>"; };
+		8EE5E7C01CCE01D00026EE7F /* HeaderClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderClass.h; sourceTree = "<group>"; };
+		8EE5E7C11CCE01D00026EE7F /* HeaderClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +152,8 @@
 				8EE5E7631CCDF3470026EE7F /* Supporting Files */,
 				8EE5E7991CCDF4A80026EE7F /* Cell.h */,
 				8EE5E79A1CCDF4A80026EE7F /* Cell.m */,
+				8EE5E7C01CCE01D00026EE7F /* HeaderClass.h */,
+				8EE5E7C11CCE01D00026EE7F /* HeaderClass.m */,
 			);
 			path = iOS__UICollectionView03_020113;
 			sourceTree = "<group>";
@@ -347,6 +352,7 @@
 				8EE5E7681CCDF3470026EE7F /* AppDelegate.m in Sources */,
 				8EE5E7651CCDF3470026EE7F /* main.m in Sources */,
 				8EE5E79B1CCDF4A80026EE7F /* Cell.m in Sources */,
+				8EE5E7C21CCE01D00026EE7F /* HeaderClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

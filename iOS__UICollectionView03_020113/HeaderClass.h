@@ -1,5 +1,5 @@
 //
-//  Cell.h
+//  HeaderClass.h
 //  iOS__UICollectionView03_020113
 //
 //  Created by  西岡 康平 on 2016/04/25.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Cell : UICollectionViewCell
-
-@property (weak, nonatomic) IBOutlet UIImageView *myImage;
+@interface HeaderClass : UICollectionReusableView
+@property (weak, nonatomic) IBOutlet UILabel *myHeaderLabel;
 
 @end
