@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
-        <!--Collection View Controller-->
+        <!--View Controller-->
         <scene sceneID="grj-bR-owr">
             <objects>
-                <collectionViewController id="mKd-7B-gty" sceneMemberID="viewController">
+                <collectionViewController id="mKd-7B-gty" userLabel="View Controller" customClass="ViewController" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="kEn-RY-Gg8">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,7 +28,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uQd-ro-CnW">
-                                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                            <rect key="frame" x="0.0" y="36" width="90" height="90"/>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -40,13 +40,13 @@
                                 </connections>
                             </collectionViewCell>
                         </cells>
-                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="lad-1P-Fc4" customClass="HeaderClass">
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="myHeader" id="lad-1P-Fc4" customClass="HeaderClass">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="47"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2v-tB-04p">
                                     <rect key="frame" x="22" y="18" width="103" height="21"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -56,8 +56,8 @@
                             </connections>
                         </collectionReusableView>
                         <connections>
-                            <outlet property="dataSource" destination="mKd-7B-gty" id="3wI-Am-svn"/>
-                            <outlet property="delegate" destination="mKd-7B-gty" id="Oj0-FV-kfF"/>
+                            <outlet property="dataSource" destination="mKd-7B-gty" id="LLC-Vz-WKd"/>
+                            <outlet property="delegate" destination="mKd-7B-gty" id="vd9-18-aJo"/>
                         </connections>
                     </collectionView>
                 </collectionViewController>

@@ -40,9 +40,11 @@
 //    return _dataArray.count;
 }
 
+
+// ヘッダー生成？
 - (UICollectionReusableView*) collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
 
-    HeaderClass * header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"myHeader" forIndexPath:indexPath];
+    HeaderClass * header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"myHeaderView" forIndexPath:indexPath];
     
     header.myHeaderLabel.text = [NSString stringWithFormat:@"Section %ld", (long) indexPath.section + 1];
     
@@ -53,7 +55,7 @@
 
 
 - (NSInteger) collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return _imageArray.count;
+    return _dataArray.count;
 }
 
 
@@ -62,7 +64,7 @@
     Cell *aCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"myCell" forIndexPath:indexPath];
     
     
-    NSArray *images = self.imageArray[indexPath.section];
+//    NSArray *images = self.imageArray[indexPath.section];
     
 //    NSLog(@"%@", _imageArray[indexPath.row]);
     
